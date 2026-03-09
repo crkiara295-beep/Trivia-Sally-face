@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+<meta charset="UTF-8">
+<title>Trivia Sally Face</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <audio id="musica" loop>
+    <source src="musica.mp3" type="audio/mpeg">
+  </audio>
+
+<div id="inicio" class="pantalla fondoInicio">
+    <button class="botonGrande" onclick="empezarTrivia()">EMPEZAR</button>
+
+</div>
+  <div id="nombre" class="pantalla fondoNombre" style="display:none;"><div class="caja">
+
+<h2>Escribe tu nombre</h2>
+
+<input type="text" id="nombreJugador">
+<br><br>
+<button onclick="comenzarPreguntas()">Continuar</button>
+
+</div>
+
+</div>
+<div id="preguntas" class="pantalla fondoPreguntas" style="display:none;"><div class="caja">
+
+<h2 id="contador"></h2>
+<h3 id="puntaje"></h3>
+<div class="barra">
+<div id="progreso"></div>
+
+</div>
+<h2 id="pregunta"></h2>
+
+<div id="opciones"></div>
+
+</div>
+</div>
+
+
+<div id="resultado" class="pantalla fondoResultado" style="display:none;">
+<div class="caja">
+<h2>Resultado Final</h2>
+<p id="puntosFinal"></p>
+<p id="mensajeFinal"></p>
+<button onclick="location.reload()">Reiniciar</button>
+</div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
